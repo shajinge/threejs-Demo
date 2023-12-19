@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>第一个three.js文件_WebGL三维场景</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        /* 隐藏body窗口区域滚动条 */
+      }
+    </style>
+    <!--引入three.js三维引擎-->
+    <!-- <script src="http://www.yanhuangxueyuan.com/versions/threejsR92/build/three.js"></script>-->
+    <!-- <script src="/js/three.js"></script> -->
+    <!-- <script src="http://www.yanhuangxueyuan.com/threejs/build/three.js"></script> -->
+  </head>
+
+  <body>
+    <div id="webgl"></div>
+    <!-- 具体路径配置，你根据自己文件目录设置，我的是课件中源码形式 -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/node_modules/three/src/Three.js",
+          "three/addons/": "/node_modules/three/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="/js/liulian.js"></script>
+    <!-- <script type="module" src="/js/learn-demo-gltf.js"></script> -->
+    <!-- <script type="module" src="/js/learn-demo.js"></script> -->
+    <!-- <script type="module" src="/js/official-website-demo.js"></script> -->
+    <!-- <script type="module" src="/js/orbitControls-demo.js"></script> -->
+  </body>
+</html>
