@@ -69,7 +69,7 @@ function initThree() {
     },
   ];
 
-  var pointTexture = new THREE.TextureLoader().load("../images/fruit.jpg");
+  var pointTexture = new THREE.TextureLoader().load("./../images/fruit.jpg");
   var material = new THREE.SpriteMaterial({ map: pointTexture });
 
   for (var i = 0; i < fruitPoints.length; i++) {
