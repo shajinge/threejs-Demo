@@ -23,22 +23,22 @@ function initThree() {
 
   var materials = [];
   //根据右左上下前后的顺序构建六个面的材质集
-  var texture_right = new THREE.TextureLoader().load("./../images/r.jpg");
+  var texture_right = new THREE.TextureLoader().load("./images/r.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_right }));
 
-  var texture_left = new THREE.TextureLoader().load("./../images/l.jpg");
+  var texture_left = new THREE.TextureLoader().load("./images/l.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_left }));
 
-  var texture_top = new THREE.TextureLoader().load("./../images/u.jpg");
+  var texture_top = new THREE.TextureLoader().load("./images/u.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_top }));
 
-  var texture_bottom = new THREE.TextureLoader().load("./../images/d.jpg");
+  var texture_bottom = new THREE.TextureLoader().load("./images/d.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_bottom }));
 
-  var texture_front = new THREE.TextureLoader().load("./../images/f.jpg");
+  var texture_front = new THREE.TextureLoader().load("./images/f.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_front }));
 
-  var texture_back = new THREE.TextureLoader().load("./../images/b.jpg");
+  var texture_back = new THREE.TextureLoader().load("./images/b.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_back }));
 
   var box = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), materials);
@@ -69,7 +69,7 @@ function initThree() {
     },
   ];
 
-  var pointTexture = new THREE.TextureLoader().load("./../images/fruit.jpg");
+  var pointTexture = new THREE.TextureLoader().load("./images/fruit.jpg");
   var material = new THREE.SpriteMaterial({ map: pointTexture });
 
   for (var i = 0; i < fruitPoints.length; i++) {
