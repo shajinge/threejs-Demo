@@ -23,7 +23,7 @@ function initThree() {
 
   var materials = [];
   //根据右左上下前后的顺序构建六个面的材质集
-  var texture_right = new THREE.TextureLoader().load("./images/r.jpg");
+  var texture_right = new THREE.TextureLoader().load("../images/r.jpg");
   materials.push(new THREE.MeshBasicMaterial({ map: texture_right }));
 
   var texture_left = new THREE.TextureLoader().load("../images/l.jpg");
